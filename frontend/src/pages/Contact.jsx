@@ -5,20 +5,20 @@ const contactMethods = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@aiassistant.dev',
-    href: 'mailto:hello@aiassistant.dev',
+    value: 'nahombekele24@gmail.com',
+    href: 'mailto:[EMAIL_ADDRESS]',
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/ai-assistant',
-    href: 'https://github.com/ai-assistant',
+    value: 'github.com/NahomDevX',
+    href: 'https://github.com/NahomDevX',
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'AI Assistant',
-    href: 'https://www.linkedin.com',
+    value: 'linkedin.com/in/nahombekele116',
+    href: 'https://www.linkedin.com/in/nahombekele116',
   },
 ];
 
