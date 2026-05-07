@@ -61,7 +61,7 @@ const Projects = () => {
               className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <div className="p-6">
-                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4">
+                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-primary to-primary-dark rounded-lg mb-4">
                   <Icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">

@@ -38,7 +38,7 @@ const Summarizer = () => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6">
       <div className="flex items-center space-x-2 mb-4">
-        <FileText className="w-6 h-6 text-blue-500" />
+        <FileText className="w-6 h-6 text-primary" />
         <h2 className="text-xl font-semibold text-gray-800 dark:text-white">
           Text Summarizer
         </h2>
@@ -53,7 +53,7 @@ const Summarizer = () => {
             value={inputText}
             onChange={(e) => setInputText(e.target.value)}
             placeholder="Paste or type your long text here for AI-powered summarization..."
-            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white min-h-[200px]"
+            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-700 dark:text-white min-h-[200px]"
             disabled={isLoading}
           />
           <div className="flex justify-between mt-2">
@@ -70,7 +70,7 @@ const Summarizer = () => {
               <button
                 onClick={handleSummarize}
                 disabled={!inputText.trim() || isLoading}
-                className="px-4 py-2 text-sm bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 text-sm bg-gradient-to-r from-primary to-primary-dark text-white rounded-lg hover:bg-primary-dark transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isLoading ? (
                   <>

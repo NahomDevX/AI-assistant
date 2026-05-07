@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { MessageCircle, FolderGit2, Info, Mail, Sun, Moon } from 'lucide-react';
+import { MessageCircle, FolderGit2, Info, Mail, Sun, Moon, FileText } from 'lucide-react';
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const location = useLocation();
   
   const navItems = [
     { path: '/', icon: MessageCircle, label: 'Chat' },
+    { path: '/summarize', icon: FileText, label: 'Summarize' },
     { path: '/projects', icon: FolderGit2, label: 'Projects' },
     { path: '/about', icon: Info, label: 'About' },
     { path: '/contact', icon: Mail, label: 'Contact' },
@@ -17,7 +18,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-8">
-            <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
               AI Assistant
             </h1>
             <div className="flex space-x-4">
@@ -30,7 +31,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                     to={item.path}
                     className={`flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
                       isActive
-                        ? 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300'
+                        ? 'bg-primary/10 text-primary'
                         : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
                     }`}
                   >

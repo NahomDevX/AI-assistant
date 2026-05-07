@@ -31,26 +31,26 @@ const About = () => {
           </h2>
           <div className="space-y-3">
             <div className="flex items-center space-x-3">
-              <Cpu className="w-5 h-5 text-blue-500" />
+              <Cpu className="w-5 h-5 text-primary" />
               <span className="text-gray-600 dark:text-gray-400">Frontend: React + Vite + TailwindCSS</span>
             </div>
             <div className="flex items-center space-x-3">
-              <Zap className="w-5 h-5 text-blue-500" />
+              <Zap className="w-5 h-5 text-primary" />
               <span className="text-gray-600 dark:text-gray-400">Backend: Node.js + Express</span>
             </div>
             <div className="flex items-center space-x-3">
-              <Shield className="w-5 h-5 text-blue-500" />
+              <Shield className="w-5 h-5 text-primary" />
               <span className="text-gray-600 dark:text-gray-400">AI: Groq API (Llama 3 8B)</span>
             </div>
             <div className="flex items-center space-x-3">
-              <Globe className="w-5 h-5 text-blue-500" />
+              <Globe className="w-5 h-5 text-primary" />
               <span className="text-gray-600 dark:text-gray-400">Deployment: Vercel + Railway</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-800 rounded-lg p-8">
+      <div className="bg-gradient-to-r from-primary/5 to-primary-dark/5 dark:from-gray-800 dark:to-gray-800 rounded-lg p-8">
         <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4 text-center">
           Key Features
         </h2>

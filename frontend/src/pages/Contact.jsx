@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
           <div className="flex items-center space-x-3 mb-6">
-            <MessageSquare className="w-6 h-6 text-blue-500" />
+            <MessageSquare className="w-6 h-6 text-primary" />
             <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
               Send a Message
             </h2>
@@ -50,7 +50,7 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-700 dark:text-white"
                 placeholder="Your name"
               />
             </div>
@@ -61,7 +61,7 @@ const Contact = () => {
               </label>
               <input
                 type="email"
-                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-700 dark:text-white"
                 placeholder="you@example.com"
               />
             </div>
@@ -71,14 +71,14 @@ const Contact = () => {
                 Message
               </label>
               <textarea
-                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white min-h-[160px]"
+                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-700 dark:text-white min-h-[160px]"
                 placeholder="How can we help?"
               />
             </div>
 
             <button
               type="button"
-              className="w-full px-4 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:opacity-90 transition-opacity"
+              className="w-full px-4 py-3 bg-gradient-to-r from-primary to-primary-dark text-white rounded-lg hover:bg-primary-dark transition-opacity"
             >
               Send Message
             </button>
@@ -95,7 +95,7 @@ const Contact = () => {
                 href={method.href}
                 className="flex items-center space-x-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg">
+                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-primary to-primary-dark rounded-lg">
                   <Icon className="w-6 h-6 text-white" />
                 </div>
                 <div>

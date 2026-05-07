@@ -80,7 +80,7 @@ const ChatBox = () => {
   return (
     <div className="flex flex-col h-[600px] bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
       {/* Header */}
-      <div className="flex justify-between items-center p-4 border-b bg-gradient-to-r from-blue-500 to-purple-600">
+      <div className="flex justify-between items-center p-4 border-b bg-gradient-to-r from-primary to-primary-dark">
         <div className="flex items-center space-x-2">
           <Sparkles className="w-5 h-5 text-white" />
           <h2 className="text-white font-semibold">AI Chat Assistant</h2>
@@ -105,13 +105,13 @@ const ChatBox = () => {
             <div key={msg.id} className={`flex ${msg.isUser ? 'justify-end' : 'justify-start'}`}>
               <div className={`max-w-[70%] rounded-lg p-3 ${
                 msg.isUser 
-                  ? 'bg-blue-500 text-white' 
+                  ? 'bg-primary text-white' 
                   : msg.isError 
                     ? 'bg-red-100 text-red-700' 
                     : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white'
               }`}>
                 <p className="text-sm whitespace-pre-wrap">{msg.text}</p>
-                <p className={`text-xs mt-1 ${msg.isUser ? 'text-blue-100' : 'text-gray-500'}`}>
+                <p className={`text-xs mt-1 ${msg.isUser ? 'text-primary-light' : 'text-gray-500'}`}>
                   {msg.timestamp}
                 </p>
               </div>
@@ -141,14 +141,14 @@ const ChatBox = () => {
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={handleKeyPress}
             placeholder="Type your message... (Press Enter to send)"
-            className="flex-1 p-3 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+            className="flex-1 p-3 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-700 dark:text-white"
             rows="2"
             disabled={isLoading}
           />
           <button
             onClick={handleSend}
             disabled={!input.trim() || isLoading}
-            className="px-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:opacity-90 disabled:opacity-50"
+            className="px-6 bg-gradient-to-r from-primary to-primary-dark text-white rounded-lg hover:bg-primary-dark disabled:opacity-50"
           >
             <Send className="w-5 h-5" />
           </button>
