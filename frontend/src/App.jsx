@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import SummarizePage from './pages/Summarize';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -24,13 +25,18 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div className="animate-slideDown">
+          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        </div>
+        <main className="animate-fadeIn animation-delay-300 opacity-0">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/summarize" element={<SummarizePage />} />
+          </Routes>
+        </main>
       </div>
     </Router>
   );
